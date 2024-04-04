@@ -375,16 +375,18 @@
 #content.dark-mode section.section-hero-default {
   background-color: var(--elevation--fill-sunken-on-dark);
 }
-#content.light-mode h1.hero-text-heading-default {
+#content.light-mode h1.hero-text-heading-default,
+#content.light-mode h1.hero-text-heading,
+#content.light-mode p.hero-text-paragraph {
   color: var(--text--primary-on-light);
 }
 #content.dark-mode h1.hero-text-heading-default,
-#content.light-mode h1.hero-text-heading,
 #content.dark-mode h1.hero-text-heading,
-#content.light-mode p.hero-text-subheading-inverted,
-#content.dark-mode p.hero-text-subheading-inverted,
-#content.light-mode p.hero-text-paragraph,
 #content.dark-mode p.hero-text-paragraph {
+  color: var(--text--primary-on-dark);
+}  
+#content.light-mode p.hero-text-subheading-inverted,
+#content.dark-mode p.hero-text-subheading-inverted {
   color: var(--text--primary-on-dark);
 }
 #content.light-mode p.hero-text-subheading {
@@ -395,11 +397,10 @@
 }
 
 #content.light-mode div.hero-default-backdrop {
-  background-image: linear-gradient(to bottom, rgba(3, 7, 18, 0) 0%, rgba(3, 7, 18, 0.5) 40%, rgba(3, 7, 18, 0.8) 60%, rgba(3, 7, 18) 100%);
-
+  background-image: linear-gradient(to bottom, rgba(229, 231, 235, 0) 0%, rgba(229, 231, 235, 0.5) 40%, rgba(229, 231, 235, 0.8) 60%, rgba(229, 231, 235) 100%);
 }
 #content.dark-mode div.hero-default-backdrop {
-  background-image: linear-gradient(to bottom, rgba(229, 231, 235, 0) 0%, rgba(229, 231, 235, 0.5) 40%, rgba(229, 231, 235, 0.8) 60%, rgba(229, 231, 235) 100%);
+  background-image: linear-gradient(to bottom, rgba(3, 7, 18, 0) 0%, rgba(3, 7, 18, 0.5) 40%, rgba(3, 7, 18, 0.8) 60%, rgba(3, 7, 18) 100%);
 }
 
 #content.light-mode section.section-default,
